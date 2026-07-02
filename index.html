@@ -156,7 +156,7 @@
           <a href="#prd" data-page="prd" class="nav-link block rounded-xl border border-transparent px-3 py-2 text-sm text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900">PRD</a>
           <div class="my-3 border-t border-slate-200"></div>
           <p class="mb-2 mt-1 px-1 text-sm font-semibold tracking-[0.14em] text-slate-400">일정 & 경험</p>
-          <a href="#timeline" data-page="timeline" class="nav-link block rounded-xl border border-transparent px-3 py-2 text-sm text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900">일정 제안</a>
+          <a href="#timeline" data-page="timeline" class="nav-link block rounded-xl border border-transparent px-3 py-2 text-sm text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900">일정 & 투입 인력</a>
           <a href="#portfolio" data-page="portfolio" class="nav-link block rounded-xl border border-transparent px-3 py-2 text-sm text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900">유사 프로젝트 경험</a>
         </nav>
       </aside>
@@ -169,7 +169,7 @@
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-6 shadow-soft backdrop-blur md:p-8">
             <p class="mb-2 text-xs font-semibold tracking-[0.2em] text-sky-700/80">프로젝트 제안서</p>
             <h1 class="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">과외 브랜드 사이트 및 학생관리, AI 자동화 웹 플랫폼 구축</h1>
-            <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600 md:text-base">과외 브랜드 공개 사이트, 학생 관리(CRM), AI 수업 리포트 자동화를 하나로 묶은 멀티테넌트 SaaS를 Next.js 15와 Supabase 기반으로 구축합니다. 8월 14일 1차 마일스톤(공개 사이트) 엄수를 최우선으로, 향후 다중 선생님 확장까지 고려한 견고한 테넌트 격리 아키텍처를 제안합니다.</p>
+            <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600 md:text-base">현재 운영 중인 브랜드(axiommathlab.kr)를 공개 사이트 + 학생 관리(CRM) + AI 리포트 자동화가 결합된 멀티테넌트 SaaS로 전환합니다. 처음부터 <strong>tenant_id + RLS</strong> 기반 계정 간 완전 격리로 설계하고, AI 리포트는 <strong>특정 AI사에 종속되지 않는 멀티모델 어댑터(등급별 교체·폴백)</strong>로 구현합니다. 8월 14일 마일스톤 1(공개 사이트)을 최우선으로 확보합니다.</p>
             <div class="mt-4 flex flex-wrap items-center gap-2">
               <span class="inline-flex rounded-full border border-sky-200 bg-sky-100 px-2.5 py-1 text-sm font-semibold tracking-[0.12em] text-sky-700">21,250,000원 (VAT 별도)</span>
               <span class="inline-flex rounded-full border border-sky-200 bg-sky-100 px-2.5 py-1 text-sm font-semibold tracking-[0.12em] text-sky-700">60일</span>
@@ -205,32 +205,32 @@
             </a>
             <a href="#timeline" class="group rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white">
               <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-amber-100 text-amber-700 border-amber-200">일정</div>
-              <h2 class="text-lg font-semibold tracking-tight text-slate-900 group-hover:text-sky-700">일정 제안</h2>
-              <p class="mt-2 text-sm leading-7 text-slate-600">단계별 마일스톤 및 산출물 일정표</p>
+              <h2 class="text-lg font-semibold tracking-tight text-slate-900 group-hover:text-sky-700">일정 & 투입 인력</h2>
+              <p class="mt-2 text-sm leading-7 text-slate-600">단계별 마일스톤, 투입 인력 구성, 커뮤니케이션</p>
             </a>
             <a href="#portfolio" class="group rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-white">
               <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-amber-100 text-amber-700 border-amber-200">경험</div>
               <h2 class="text-lg font-semibold tracking-tight text-slate-900 group-hover:text-sky-700">유사 프로젝트 경험</h2>
-              <p class="mt-2 text-sm leading-7 text-slate-600">유사 SaaS·관리 시스템 수행 경험 및 기술 스택</p>
+              <p class="mt-2 text-sm leading-7 text-slate-600">멀티테넌트 SaaS·AI 리포트·멀티모델 어댑터 경험</p>
             </a>
           </div>
 
           <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
-              <p class="text-2xl font-bold text-sky-700">멀티테넌트</p>
-              <p class="mt-1 text-xs text-slate-500">Supabase RLS 테넌트 격리</p>
+              <p class="text-2xl font-bold text-sky-700">tenant_id+RLS</p>
+              <p class="mt-1 text-xs text-slate-500">계정 간 데이터 완전 분리</p>
             </div>
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
-              <p class="text-2xl font-bold text-sky-700">90+</p>
-              <p class="mt-1 text-xs text-slate-500">Lighthouse 목표 (4개 항목)</p>
+              <p class="text-2xl font-bold text-sky-700">AI 4단</p>
+              <p class="mt-1 text-xs text-slate-500">멀티모델 어댑터 + 폴백</p>
             </div>
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
               <p class="text-2xl font-bold text-sky-700">8/14</p>
-              <p class="mt-1 text-xs text-slate-500">마일스톤 1 공개사이트 목표</p>
+              <p class="mt-1 text-xs text-slate-500">마일스톤 1 공개사이트</p>
             </div>
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
-              <p class="text-2xl font-bold text-sky-700">API 4종</p>
-              <p class="mt-1 text-xs text-slate-500">결제선생·Solapi·Notion·AI</p>
+              <p class="text-2xl font-bold text-sky-700">90+</p>
+              <p class="mt-1 text-xs text-slate-500">Lighthouse 4개 항목</p>
             </div>
           </div>
 
@@ -245,37 +245,40 @@
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
               <h1>프로젝트 소개</h1>
-              <blockquote>과외 브랜드 공개 사이트 + 학생 관리(CRM) + AI 수업 리포트 자동화를 하나로 묶은 멀티테넌트 SaaS. 향후 다중 선생님 확장을 전제로 Supabase RLS 기반 테넌트 격리를 설계 단계부터 반영합니다.</blockquote>
+              <blockquote>과외 브랜드 공개 사이트 + 학생 관리(CRM) + AI 수업 리포트 자동화를 하나로 묶은 멀티테넌트 SaaS. 현재 운영 중인 axiommathlab.kr을 전환하며, 다중 선생님(테넌트) 확장을 전제로 tenant_id + RLS 격리를 설계 단계부터 반영합니다.</blockquote>
 
               <h2>프로젝트 개요</h2>
               <table>
                 <tr><th>항목</th><th>내용</th></tr>
                 <tr><td>프로젝트명</td><td><a href="https://www.wishket.com/project/156578/" target="_blank" rel="noopener noreferrer" class="text-sky-700 underline decoration-sky-300 hover:decoration-sky-500">과외 브랜드 사이트 및 학생관리, AI 자동화 웹 플랫폼 구축</a></td></tr>
+                <tr><td>전환 대상</td><td>axiommathlab.kr (기존 운영 중 브랜드) → 올인원 웹 플랫폼 (1차)</td></tr>
                 <tr><td>카테고리</td><td>웹 · SaaS/솔루션 · CRM/고객관리 (멀티테넌트)</td></tr>
                 <tr><td>제안 금액</td><td>21,250,000원 (VAT 별도)</td></tr>
-                <tr><td>제안 기간</td><td>60일 (마일스톤 1: 8/14 공개사이트)</td></tr>
-                <tr><td>핵심 기술</td><td>Next.js 15 (App Router), TypeScript, Supabase (PostgreSQL·RLS), Vercel, 결제선생·Solapi·Notion·AI API</td></tr>
+                <tr><td>제안 기간</td><td>60일 (M1: 8/14 공개사이트 · M2: 착수 후 9주차)</td></tr>
+                <tr><td>핵심 기술</td><td>Next.js 15 (App Router), TypeScript, Supabase (PostgreSQL·RLS), Vercel, 결제선생·Solapi·Notion·AI 멀티모델 어댑터</td></tr>
               </table>
 
               <h2>핵심 요구사항 분석</h2>
               <ul>
-                <li>공개 브랜드 사이트 + CMS 관리자 — 콘텐츠 직접 편집, 모바일 우선 반응형, SEO 최적화</li>
-                <li>학생·학원 행정 관리 — 학생/학부모 정보, 상담·결제·일정 관리(CRM)</li>
-                <li>AI 수업 리포트 자동 생성 — AI API 연동, 학부모 대상 리포트 자동 배포</li>
-                <li>멀티테넌트 구조 — Supabase RLS로 선생님별 테넌트 데이터 완전 격리</li>
-                <li>외부 API 4종 연동 — 결제선생(결제), Solapi(알림톡/문자), Notion(문서), AI(리포트)</li>
-                <li>비기능 요건 — Lighthouse 성능/접근성/SEO/모범사례 각 90점 이상</li>
-                <li>노코드 빌더 미사용 — 실제 코드 기반 개발, 소스코드/디자인 저작재산권 발주처 귀속(NDA 별도)</li>
+                <li><strong>멀티테넌트(tenant_id + RLS)</strong> — 처음부터 계정 간 데이터 완전 분리, 확장 대비 필수</li>
+                <li><strong>공개 사이트(6페이지) + 약관 3종</strong> — 메인·튜터소개·수업안내·후기·FAQ·상담 + 이용약관·개인정보·환불</li>
+                <li><strong>코드 없는 CMS</strong> — 관리자 페이지에서 콘텐츠 수정, 저장 즉시 반영</li>
+                <li><strong>학생 관리(CRM)</strong> — 상담 접수·학생·수업기록·일정(캘린더)·성적·결제·자료 관리</li>
+                <li><strong>AI 리포트 멀티모델 어댑터</strong> — 수업/주간/월간/심화 리포트 자동 생성, 등급별 모델 교체·폴백, 발송 전 관리자 승인</li>
+                <li><strong>자동화</strong> — 상담 접수 알림·수업 리마인더·후기 요청·학생 화면(Notion) 자동 갱신</li>
+                <li><strong>결제</strong> — 결제선생 청구 문자(링크), 미납 관리, 매출 집계, PG사 확장 대비 어댑터</li>
+                <li><strong>알림</strong> — Solapi 카카오 알림톡 우선, 실패 시 SMS 자동 대체</li>
+                <li><strong>비기능</strong> — 모바일 우선 반응형, Lighthouse 성능·접근성·SEO·모범사례 각 90점 이상, 노코드 빌더 미사용</li>
               </ul>
 
               <h2>제안 포인트</h2>
               <ul>
-                <li><strong>마일스톤 1(8/14) 엄수 우선 설계</strong> — 공개 사이트를 독립 배포 단위로 분리, 초기 스프린트에 집중해 기한을 최우선 확보</li>
-                <li><strong>멀티테넌트 우선 아키텍처</strong> — 단일 브랜드 전환 단계부터 RLS 정책과 테넌트 스키마를 확정해, 향후 다중 선생님 확장 시 재설계 없이 확장</li>
-                <li><strong>AI 리포트 자동화 실경험</strong> — AI 기반 보고서 자동 생성 파이프라인(입력 정규화→생성→검수→배포)을 상용 서비스에 구축·운영한 경험 보유</li>
-                <li><strong>관리 시스템·대상자 관리 경험</strong> — 멀티테넌트 케어 관리, 어드민 대시보드, 승인 워크플로우를 다수 상용화 (학생 관리·학부모 커뮤니케이션 구조와 직결)</li>
-                <li><strong>Lighthouse 90+ 성능 최적화</strong> — Next.js App Router 서버 컴포넌트·이미지 최적화·SEO 메타 설계로 4개 항목 90점 목표 달성 프로세스 내재화</li>
-                <li><strong>외부 API 연동 안정성</strong> — 결제·알림·문서·AI 등 다수 외부 API 연동 및 실패 재시도·웹훅 검증 경험 반영</li>
+                <li><strong>마일스톤 1(8/14) 엄수 우선 설계</strong> — 공개 사이트(6페이지+약관)를 독립 배포 단위로 분리, 초기 스프린트에 집중해 지원사업 보고 일정 확보</li>
+                <li><strong>멀티테넌트 우선 아키텍처</strong> — tenant_id + Supabase RLS 정책을 1일차부터 확정, 향후 다중 선생님 확장 시 재설계 없이 대응</li>
+                <li><strong>AI 멀티모델 어댑터 실경험</strong> — Claude·Gemini 등 다중 모델을 어댑터로 추상화하고 등급별 교체·폴백·품질 게이트를 운영한 경험 보유 → 요구된 REPORT_AI_LESSON/WEEKLY/MONTHLY/DEEP 환경변수 기반 구조에 그대로 적용</li>
+                <li><strong>승인 후 발송 워크플로우</strong> — AI 결과 '참고용' 표기 + 관리자(선생님) 승인 후에만 발송되는 검수·승인 파이프라인 설계 경험(리포트 자동생성·승인 발송)</li>
+                <li><strong>관리 시스템·대상자 관리 경험</strong> — 멀티테넌트 케어 관리, 어드민 대시보드, 알림 폴백 구조 다수 상용화 (학생 관리·학부모 알림과 직결)</li>
+                <li><strong>Lighthouse 90+ 성능 최적화</strong> — Next.js App Router 서버 컴포넌트·이미지 최적화·SEO 메타 설계로 4개 항목 90점 목표 달성</li>
               </ul>
 
               <h2>사용 기술 및 툴</h2>
@@ -284,13 +287,13 @@
                 <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Next.js 15 (App Router)</span>
                 <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">TypeScript</span>
                 <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Supabase (PostgreSQL)</span>
-                <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Supabase RLS</span>
+                <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">tenant_id + RLS</span>
                 <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Vercel</span>
                 <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Tailwind CSS</span>
+                <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">AI 멀티모델 어댑터</span>
                 <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">결제선생 API</span>
-                <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Solapi</span>
+                <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Solapi (알림톡/SMS)</span>
                 <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">Notion API</span>
-                <span class="rounded-full border border-sky-200 bg-sky-50 px-3 py-1 text-sm font-medium text-sky-700">AI API</span>
               </div>
               <h3>협업 및 커뮤니케이션</h3>
               <div class="flex flex-wrap gap-2 not-prose">
@@ -308,14 +311,15 @@
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
               <h1>견적서</h1>
-              <blockquote>본 견적서는 프로젝트 요구사항 분석을 기반으로 산출되었습니다.</blockquote>
+              <blockquote>본 견적서는 의뢰 요약서(1차 개발 범위)를 기반으로 산출되었습니다. 지급은 마일스톤 분할 · 위시켓 에스크로 경유를 기준으로 합니다.</blockquote>
 
               <h2>견적 요약</h2>
               <table>
                 <tr><th>항목</th><th>내용</th></tr>
-                <tr><td>프로젝트명</td><td>과외 브랜드 사이트 및 학생관리, AI 자동화 웹 플랫폼 구축</td></tr>
+                <tr><td>프로젝트명</td><td>과외 브랜드 사이트 및 학생관리, AI 자동화 웹 플랫폼 구축 (1차)</td></tr>
                 <tr><td>제안 금액</td><td><strong>21,250,000원 (VAT 별도)</strong></td></tr>
                 <tr><td>제안 기간</td><td>60일</td></tr>
+                <tr><td>지급 방식</td><td>마일스톤 분할, 위시켓 에스크로 경유</td></tr>
                 <tr><td>견적 유효기간</td><td>제안일로부터 30일</td></tr>
               </table>
 
@@ -325,11 +329,12 @@
                   <tr><th>구분</th><th>항목</th><th>수량</th><th>단가</th><th>금액</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>기획/설계</td><td>요구사항 정의, IA, 멀티테넌트/RLS 데이터 모델링</td><td>1식</td><td>-</td><td>2,300,000원</td></tr>
-                  <tr><td>디자인</td><td>공개사이트·관리자·학생관리 UI/UX (Figma)</td><td>1식</td><td>-</td><td>3,600,000원</td></tr>
-                  <tr><td>프론트엔드</td><td>공개사이트·CMS·대시보드·학생관리 화면 개발, 반응형/성능</td><td>1식</td><td>-</td><td>7,000,000원</td></tr>
-                  <tr><td>백엔드/연동</td><td>Supabase 스키마·RLS, 결제선생·Solapi·Notion·AI 연동, 리포트 자동화</td><td>1식</td><td>-</td><td>6,150,000원</td></tr>
-                  <tr><td>QA/배포</td><td>Lighthouse 최적화, 통합 테스트, Vercel 배포</td><td>1식</td><td>-</td><td>2,200,000원</td></tr>
+                  <tr><td>기획/설계</td><td>요구사항 정의, IA, 멀티테넌트(tenant_id+RLS) 데이터 모델링</td><td>1식</td><td>-</td><td>2,300,000원</td></tr>
+                  <tr><td>디자인</td><td>공개사이트(6P)·관리자·학생관리 UI/UX (Figma)</td><td>1식</td><td>-</td><td>3,600,000원</td></tr>
+                  <tr><td>프론트엔드</td><td>공개 6P+약관·CMS·대시보드·학생관리 화면, 반응형/Lighthouse</td><td>1식</td><td>-</td><td>6,800,000원</td></tr>
+                  <tr><td>백엔드/연동</td><td>Supabase 스키마·RLS, 결제선생·Solapi(폴백)·Notion 연동, 미납/매출</td><td>1식</td><td>-</td><td>5,150,000원</td></tr>
+                  <tr><td>AI 리포트</td><td>멀티모델 어댑터(4단), 폴백, 발송 전 승인 파이프라인</td><td>1식</td><td>-</td><td>1,200,000원</td></tr>
+                  <tr><td>QA/배포</td><td>Lighthouse 최적화, 인수 시나리오 테스트, Vercel 배포·도메인 연결</td><td>1식</td><td>-</td><td>2,200,000원</td></tr>
                 </tbody>
                 <tfoot>
                   <tr><th colspan="4">합계 (VAT 별도)</th><th>21,250,000원</th></tr>
@@ -338,27 +343,28 @@
 
               <h2>산정 근거</h2>
               <ul>
-                <li>공고 요구 범위(공개사이트+CMS, 학생관리 CRM, AI 리포트 자동화, 멀티테넌트, API 4종)를 기능 단위로 분해하여 공수 기반 산출</li>
-                <li>산출물 완성도(1순위)와 마일스톤 1(8/14) 일정 준수(2순위)를 최우선으로 반영</li>
-                <li>유사 SaaS·관리 시스템 수행 경험 기반 효율적 개발로 합리적 단가 제시</li>
+                <li>의뢰 요약서 1차 범위(공개 6P+약관, 관리자, 학생관리, AI 4단 리포트, 자동화, 결제, 알림)를 기능 단위로 분해하여 공수 기반 산출</li>
+                <li>산출물 완성도(1순위)와 마일스톤 1(8/14) 일정 준수(2순위)를 최우선 반영</li>
+                <li>학생·학부모 조회 화면은 1차에서 Notion API 연동으로 대체(자체 포털 제외)하여 합리적 범위·단가 구성</li>
+                <li>유사 SaaS·AI 리포트·멀티모델 어댑터 수행 경험 기반 효율적 개발</li>
                 <li>10만원 단위 반올림, VAT 별도 기준</li>
               </ul>
 
               <h2>포함 사항</h2>
               <ul>
-                <li>소스 코드 전체 이관 (프론트엔드·백엔드 원본, 저작재산권 발주처 귀속)</li>
-                <li>UI/UX 디자인 원본 파일 (Figma)</li>
+                <li>소스 코드 전체 이관 (잔금 지급 후 발주처 이전, 진행 중 매주 백업 확인)</li>
+                <li>UI/UX 디자인 원본 파일 (Figma), 저작재산권 발주처 귀속</li>
                 <li>개발 문서 (DB 스키마·RLS 정책, API 연동 가이드, 배포 가이드)</li>
-                <li>1개월 무상 하자 보수</li>
-                <li>Vercel 배포 환경 세팅 (1회)</li>
+                <li>납품 후 2주 무상 수정</li>
+                <li>Vercel·Supabase 배포 환경 세팅 및 도메인 연결 (발주처 명의 계정에 협업자로 참여)</li>
               </ul>
 
               <h2>불포함 사항</h2>
               <ul>
                 <li>서버/호스팅 비용 (Vercel, Supabase 유료 플랜 등)</li>
-                <li>도메인 구매 비용</li>
-                <li>외부 유료 API 사용 비용 (결제선생, Solapi, AI API 등)</li>
-                <li>하자 보수 기간 이후 유지보수 (월 단위 별도 협의)</li>
+                <li>외부 유료 API·AI 모델 사용 비용 (키는 발주처 발급·서버 전용)</li>
+                <li>학생·학부모 자체 포털(향후 단계), 1차 범위 외 신규 대규모 기능</li>
+                <li>납품 후 2주 무상 수정 기간 이후 유지보수 (월 단위 별도 협의)</li>
               </ul>
             </article>
           </div>
@@ -369,16 +375,17 @@
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
               <h1>공수계산서</h1>
-              <blockquote>기능별 개발 공수(Man-Day)를 산출하여 일정과 비용의 근거를 제시합니다.</blockquote>
+              <blockquote>의뢰 요약서 1차 범위 기준 기능별 개발 공수(Man-Day)를 산출하여 일정과 비용의 근거를 제시합니다.</blockquote>
 
               <h2>공수 요약</h2>
               <table>
                 <tr><th>구분</th><th>공수 (M/D)</th><th>비율</th></tr>
                 <tr><td>기획/설계</td><td>10 M/D</td><td>11%</td></tr>
                 <tr><td>디자인 (UI/UX)</td><td>15 M/D</td><td>17%</td></tr>
-                <tr><td>프론트엔드</td><td>30 M/D</td><td>33%</td></tr>
-                <tr><td>백엔드/연동</td><td>25 M/D</td><td>28%</td></tr>
-                <tr><td>QA/배포</td><td>10 M/D</td><td>11%</td></tr>
+                <tr><td>프론트엔드</td><td>29 M/D</td><td>32%</td></tr>
+                <tr><td>백엔드/연동</td><td>24 M/D</td><td>27%</td></tr>
+                <tr><td>AI 리포트 어댑터</td><td>6 M/D</td><td>7%</td></tr>
+                <tr><td>QA/배포</td><td>6 M/D</td><td>6%</td></tr>
                 <tr><th>합계</th><th>90 M/D</th><th>100%</th></tr>
               </table>
 
@@ -388,19 +395,20 @@
                   <tr><th>기능</th><th>세부 작업</th><th>담당</th><th>공수 (M/D)</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td rowspan="2">멀티테넌트 기반구조 & 인증</td><td>Supabase Auth, 테넌트 스키마, RLS 정책, 역할 권한(선생님/관리자/학부모)</td><td>백엔드</td><td>8</td></tr>
+                  <tr><td rowspan="2">멀티테넌트 기반구조 & 인증</td><td>Supabase Auth, tenant_id 스키마, RLS 정책, 역할 권한(선생님/관리자/학부모)</td><td>백엔드</td><td>8</td></tr>
                   <tr><td>로그인/온보딩/권한 UI</td><td>프론트엔드</td><td>3</td></tr>
-                  <tr><td rowspan="2">공개 브랜드 사이트 & CMS</td><td>랜딩·소개·문의 페이지, SEO/메타, 반응형</td><td>프론트엔드</td><td>9</td></tr>
-                  <tr><td>CMS 콘텐츠 관리 API/에디터</td><td>풀스택</td><td>5</td></tr>
-                  <tr><td rowspan="2">관리자 대시보드 & 학생관리(CRM)</td><td>학생/학부모, 상담, 일정, 수업 관리 화면</td><td>프론트엔드</td><td>10</td></tr>
-                  <tr><td>CRM 데이터 모델·API·검색/필터</td><td>백엔드</td><td>7</td></tr>
-                  <tr><td>결제 관리</td><td>결제선생 API 연동, 수강료 청구·영수·상태 웹훅</td><td>백엔드</td><td>4</td></tr>
-                  <tr><td>알림 자동화</td><td>Solapi(알림톡/문자) 연동, 일정·결제·리포트 알림 트리거</td><td>백엔드</td><td>3</td></tr>
-                  <tr><td rowspan="2">AI 수업 리포트 자동화</td><td>AI API 연동 리포트 생성 파이프라인, 검수/편집</td><td>백엔드</td><td>6</td></tr>
-                  <tr><td>Notion API 아카이빙/배포, 리포트 UI</td><td>풀스택</td><td>4</td></tr>
+                  <tr><td rowspan="2">공개 사이트(6P) + 약관 3종</td><td>메인·튜터소개·수업안내·후기·FAQ·상담 + 이용약관·개인정보·환불, SEO/반응형</td><td>프론트엔드</td><td>9</td></tr>
+                  <tr><td>CMS 콘텐츠 편집(즉시 반영) API/에디터, D-day 배너·모집현황</td><td>풀스택</td><td>5</td></tr>
+                  <tr><td rowspan="2">관리자 & 학생 관리(CRM)</td><td>대시보드, 상담접수·학생·수업기록·일정(캘린더)·성적·자료 화면</td><td>프론트엔드</td><td>10</td></tr>
+                  <tr><td>CRM 데이터 모델·API·검색/필터, 후기·FAQ·설정 관리</td><td>백엔드</td><td>7</td></tr>
+                  <tr><td>결제</td><td>결제선생 청구 문자(링크)·미납 관리·매출 집계, PG 확장 어댑터</td><td>백엔드</td><td>5</td></tr>
+                  <tr><td>알림·자동화</td><td>Solapi 알림톡→SMS 폴백, 상담접수 알림·수업 리마인더·후기 요청 트리거</td><td>백엔드</td><td>4</td></tr>
+                  <tr><td rowspan="2">AI 리포트 (멀티모델 어댑터)</td><td>어댑터 패턴(LESSON/WEEKLY/MONTHLY/DEEP 환경변수), 등급별 교체·폴백, 참고용 표기</td><td>백엔드</td><td>4</td></tr>
+                  <tr><td>발송 전 관리자 승인 UI/워크플로우, 리포트 렌더링</td><td>풀스택</td><td>2</td></tr>
+                  <tr><td>Notion 연동</td><td>학생·학부모 조회 화면 Notion API 대체, 학생 화면 자동 갱신</td><td>백엔드</td><td>2</td></tr>
                   <tr><td>디자인</td><td>공개사이트·관리자·학생관리 UI/UX (Figma)</td><td>디자인</td><td>15</td></tr>
-                  <tr><td>기획/설계</td><td>요구사항 정의, IA, 화면흐름, 데이터 모델링</td><td>기획</td><td>10</td></tr>
-                  <tr><td>QA/성능/배포</td><td>Lighthouse 90+ 최적화, 통합 테스트, Vercel 배포</td><td>공통</td><td>6</td></tr>
+                  <tr><td>기획/설계</td><td>요구사항 정의, IA, 화면흐름, 멀티테넌트 데이터 모델링</td><td>기획</td><td>10</td></tr>
+                  <tr><td>QA/성능/배포</td><td>Lighthouse 90+ 최적화, 인수 시나리오 테스트, Vercel 배포·도메인</td><td>공통</td><td>6</td></tr>
                 </tbody>
               </table>
 
@@ -408,8 +416,8 @@
               <ul>
                 <li>1 M/D = 8시간 기준 (1인 1일 작업량)</li>
                 <li>주 5일 근무 기준, 버퍼 10~15% 포함</li>
-                <li>다수 인력 투입으로 기획·디자인·개발 단계 병행 → 60일 내 완료</li>
-                <li>유사 SaaS·관리 시스템 수행 경험 기반 효율적 개발</li>
+                <li>팀 단위 다수 인력 투입으로 기획·디자인·개발 단계 병행 → 60일 내 완료</li>
+                <li>완료 기준: 인수 테스트(실제 시나리오) 통과</li>
               </ul>
             </article>
           </div>
@@ -420,13 +428,13 @@
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
               <h1>PRD (Product Requirements Document)</h1>
-              <blockquote>프로젝트 요구사항을 정의하고 기능 범위를 명확히 합니다.</blockquote>
+              <blockquote>의뢰 요약서(1차 개발 범위)를 기반으로 기능 범위를 정의합니다.</blockquote>
 
               <h2>1. 프로젝트 배경 및 목적</h2>
               <ul>
                 <li>학원·과외 행정 업무(상담·결제·일정)를 자동화하고, AI 수업 리포트로 학부모 만족도를 높이는 것이 목표</li>
-                <li>현재 운영 중인 단일 브랜드를 본 시스템으로 전환하며, 향후 다중 선생님이 각자 계정으로 사용하는 멀티테넌트 SaaS로 확장</li>
-                <li>지원사업 일정에 맞춰 8월 14일까지 1차 마일스톤(공개 사이트) 달성이 최우선</li>
+                <li>현재 운영 중인 브랜드(axiommathlab.kr)를 본 시스템으로 전환하며, 향후 다중 선생님이 각자 계정으로 사용하는 멀티테넌트 SaaS로 확장</li>
+                <li>지원사업 보고 일정에 맞춰 8월 14일까지 마일스톤 1(공개 사이트) 달성이 최우선</li>
               </ul>
 
               <h2>2. 사용자 정의</h2>
@@ -435,32 +443,34 @@
                   <tr><th>사용자 유형</th><th>설명</th><th>주요 기능</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>선생님(테넌트 오너)</td><td>브랜드 운영 주체</td><td>CMS 편집, 학생/상담/일정/결제 관리, AI 리포트 발행</td></tr>
-                  <tr><td>관리자/조교</td><td>테넌트 내 위임 운영</td><td>학생관리, 일정, 알림, 리포트 보조(권한 범위 내)</td></tr>
-                  <tr><td>학부모/학생</td><td>서비스 수요자</td><td>공개사이트 열람·문의, 결제, 리포트/알림 수신</td></tr>
+                  <tr><td>선생님(테넌트 오너)</td><td>브랜드 운영 주체</td><td>CMS 편집, 학생/상담/일정/성적/결제 관리, AI 리포트 승인·발송</td></tr>
+                  <tr><td>관리자/조교</td><td>테넌트 내 위임 운영</td><td>학생관리, 일정, 알림, 리포트 검수 보조(권한 범위 내)</td></tr>
+                  <tr><td>학부모/학생</td><td>서비스 수요자</td><td>공개사이트 열람·상담 접수, 결제, 리포트/알림 수신, Notion 조회 화면(1차)</td></tr>
                   <tr><td>플랫폼 슈퍼관리자</td><td>전체 테넌트 관리(확장 단계)</td><td>테넌트 생성/관리, 공통 설정</td></tr>
                 </tbody>
               </table>
 
-              <h2>3. 기능 요구사항</h2>
+              <h2>3. 기능 요구사항 (1차)</h2>
               <h3>3.1 공개 사이트 & CMS 관리자</h3>
               <ul>
-                <li><strong>[필수]</strong> 브랜드 공개 사이트(랜딩·소개·문의), 모바일 우선 반응형</li>
-                <li><strong>[필수]</strong> CMS 콘텐츠 관리 — 페이지/섹션/게시물 직접 편집</li>
-                <li><strong>[필수]</strong> SEO 메타·사이트맵, Lighthouse 90+ 최적화</li>
+                <li><strong>[필수]</strong> 공개 6페이지 — 메인·튜터소개·수업안내·후기·FAQ·상담</li>
+                <li><strong>[필수]</strong> 약관 3종 — 이용약관·개인정보처리방침·환불규정</li>
+                <li><strong>[필수]</strong> 관리자 — 로그인·대시보드·D-day 배너·모집현황·페이지편집·후기·FAQ·설정</li>
+                <li><strong>[필수]</strong> 코드 없는 콘텐츠 수정, 저장 즉시 반영 / SEO·Lighthouse 90+</li>
               </ul>
               <h3>3.2 학생 및 학원 행정 관리</h3>
               <ul>
-                <li><strong>[필수]</strong> 학생/학부모 정보 관리(CRM), 검색·필터</li>
-                <li><strong>[필수]</strong> 상담 관리, 수업/일정 관리(캘린더)</li>
-                <li><strong>[필수]</strong> 결제 관리 — 결제선생 API 연동(수강료 청구·영수·상태)</li>
-                <li><strong>[필수]</strong> 알림 자동화 — Solapi 알림톡/문자(일정·결제·리포트)</li>
+                <li><strong>[필수]</strong> 상담 접수, 학생 관리, 수업기록, 일정(캘린더), 성적, 자료 관리</li>
+                <li><strong>[필수]</strong> 결제 — 결제선생 청구 문자(링크), 미납 관리, 매출 집계 (PG 확장 어댑터)</li>
+                <li><strong>[필수]</strong> 알림 — Solapi 카카오 알림톡 우선, 실패 시 SMS 자동 대체</li>
+                <li><strong>[필수]</strong> 자동화 — 상담 접수 알림·수업 리마인더·후기 요청, 학생 화면(Notion) 자동 갱신</li>
               </ul>
-              <h3>3.3 AI 리포트 & 자동화</h3>
+              <h3>3.3 AI 리포트 (멀티모델 어댑터)</h3>
               <ul>
-                <li><strong>[필수]</strong> AI API 연동 수업 리포트 자동 생성(입력→생성→검수→발행)</li>
-                <li><strong>[필수]</strong> Notion API 연동 리포트 아카이빙/배포</li>
-                <li><strong>[선택]</strong> 리포트 템플릿/톤 커스터마이징</li>
+                <li><strong>[필수]</strong> 수업/주간/월간/심화 리포트 자동 생성 (4단)</li>
+                <li><strong>[필수]</strong> 어댑터 패턴 — 유형별 환경변수(REPORT_AI_LESSON / WEEKLY / MONTHLY / DEEP)로 모델 지정, 실패 시 폴백</li>
+                <li><strong>[필수]</strong> 모든 AI 결과 '참고용' 표기 + 관리자(선생님) 승인 후에만 발송</li>
+                <li><strong>[필수]</strong> Notion API 연동 — 1차 학생·학부모 조회 화면 대체</li>
               </ul>
 
               <h2>4. 비기능 요구사항</h2>
@@ -470,36 +480,38 @@
                 </thead>
                 <tbody>
                   <tr><td>성능/규격</td><td>모바일 우선 반응형, Lighthouse 성능/접근성/SEO/모범사례 각 90점 이상</td></tr>
-                  <tr><td>보안/격리</td><td>Supabase RLS를 통한 철저한 테넌트 데이터 격리</td></tr>
+                  <tr><td>보안/격리</td><td>tenant_id + Supabase RLS로 계정 간 데이터 완전 분리</td></tr>
+                  <tr><td>CMS</td><td>관리자 페이지에서 콘텐츠 코드 없이 수정, 저장 즉시 반영</td></tr>
                   <tr><td>개발 방식</td><td>노코드 빌더(Webflow 등) 미사용 — 실제 코드 기반 개발</td></tr>
-                  <tr><td>확장성</td><td>다중 선생님(테넌트) 확장 대응 아키텍처</td></tr>
-                  <tr><td>권한</td><td>역할 기반 접근 제어(선생님/관리자/학부모/슈퍼관리자)</td></tr>
+                  <tr><td>확장성</td><td>다중 선생님(테넌트) 확장, AI/PG 어댑터로 벤더 종속 회피</td></tr>
                 </tbody>
               </table>
 
               <h2>5. 기술 제약사항</h2>
               <ul>
                 <li>Next.js 15 (App Router), TypeScript, Supabase (PostgreSQL), Vercel 스택 준수</li>
-                <li>외부 연동: 결제선생 API, Solapi, Notion API, AI API</li>
-                <li>소스코드·디자인 저작재산권 발주처 귀속, NDA 별도 체결</li>
-                <li>상세 기능 명세서는 선정 후 제공, AI/알림/결제 API 키 발급 지원</li>
+                <li>외부 연동: 결제선생(청구 문자, PG 어댑터), Solapi(알림톡+SMS), Notion API, AI 멀티모델 어댑터</li>
+                <li>도메인·서버(Vercel·Supabase)는 발주처 명의, 개발자는 협업자로 초대</li>
+                <li>AI·알림·결제 키는 발주처 발급, 서버 전용 / NDA 별도 체결, 저작재산권 발주처 귀속·저작인격권 불행사 특약</li>
+                <li>재하도급 사전 서면 동의 필수, 라이선스 확인된 자산만 사용 / 상세 기능 명세서는 선정 후 별도 제공</li>
               </ul>
 
               <h2>6. 범위 외 사항 (Out of Scope)</h2>
               <ul>
-                <li>네이티브 모바일 앱(iOS/Android) 별도 개발 (반응형 웹으로 대응)</li>
-                <li>외부 유료 API 사용료 및 서버/호스팅 비용</li>
-                <li>공고에 명시되지 않은 신규 대규모 기능(추후 고도화/유지보수 단계에서 협의)</li>
+                <li>학생·학부모 자체 포털(1차는 Notion API 연동으로 대체, 자체 포털은 향후 단계)</li>
+                <li>네이티브 모바일 앱(iOS/Android) — 모바일 우선 반응형 웹으로 대응</li>
+                <li>외부 유료 API·AI 모델 사용료 및 서버/호스팅 비용</li>
+                <li>1차 범위 외 신규 대규모 기능 (2차/유지보수 단계에서 협의)</li>
               </ul>
             </article>
           </div>
         </div>
 
-        <!-- PAGE: 일정 제안 -->
+        <!-- PAGE: 일정 & 투입 인력 -->
         <div id="page-timeline" class="page-section space-y-6">
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
-              <h1>일정 제안</h1>
+              <h1>일정 & 투입 인력</h1>
               <blockquote>총 60일 기준 단계별 마일스톤 및 산출물을 제안합니다. 마일스톤 1(공개 사이트)은 8/14 이전 완료를 목표로 초기 스프린트에 집중합니다.</blockquote>
 
               <h2>전체 일정 요약</h2>
@@ -508,10 +520,10 @@
                   <tr><th>단계</th><th>기간</th><th>주요 산출물</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Phase 1: 기획/설계·데이터 모델링</td><td>Day 1–10</td><td>요구사항 정의서, IA, RLS 데이터 모델, 화면흐름</td></tr>
-                  <tr><td>Phase 2: 디자인 + 공개사이트(M1)</td><td>Day 8–30</td><td>Figma 디자인, 공개 브랜드 사이트+CMS, SEO/성능</td></tr>
-                  <tr><td>Phase 3: 학생관리·결제·알림</td><td>Day 25–48</td><td>CRM, 결제선생·Solapi 연동, 관리자 대시보드</td></tr>
-                  <tr><td>Phase 4: AI 리포트 + QA/배포(M2)</td><td>Day 45–60</td><td>AI 리포트 자동화, Notion 연동, Lighthouse 최적화, 배포</td></tr>
+                  <tr><td>Phase 1: 기획/설계·데이터 모델링</td><td>Day 1–10</td><td>요구사항 정의서, IA, tenant_id/RLS 데이터 모델, 화면흐름</td></tr>
+                  <tr><td>Phase 2: 디자인 + 공개사이트(M1)</td><td>Day 8–30</td><td>Figma 디자인, 공개 6P+약관+CMS, SEO/Lighthouse 90+</td></tr>
+                  <tr><td>Phase 3: 관리자·학생관리·결제·알림</td><td>Day 25–48</td><td>대시보드, CRM, 결제선생·Solapi(폴백) 연동, 자동화</td></tr>
+                  <tr><td>Phase 4: AI 4단 리포트 + Notion + QA/배포(M2)</td><td>Day 45–60</td><td>멀티모델 어댑터·승인 발송, Notion 연동, 인수 테스트·배포·도메인</td></tr>
                 </tbody>
               </table>
             </article>
@@ -524,7 +536,7 @@
                 <p class="text-sm font-semibold tracking-[0.14em] text-sky-700">PHASE 1</p>
                 <h4 class="text-base font-semibold text-slate-900">기획 및 설계</h4>
                 <p class="mb-1 text-xs font-semibold text-amber-600">Day 1–10</p>
-                <p class="text-sm leading-7 text-slate-600">요구사항 확정, 정보구조(IA), 화면흐름, 멀티테넌트/RLS 데이터 모델링</p>
+                <p class="text-sm leading-7 text-slate-600">요구사항 확정, 정보구조(IA), 화면흐름, 멀티테넌트(tenant_id+RLS) 데이터 모델링</p>
                 <ul class="mt-2 list-disc pl-5 text-sm text-slate-500">
                   <li>산출물: 요구사항 정의서, IA/메뉴구조, ERD·RLS 정책 초안</li>
                 </ul>
@@ -532,26 +544,26 @@
               <div class="timeline-item">
                 <p class="text-sm font-semibold tracking-[0.14em] text-sky-700">PHASE 2</p>
                 <h4 class="text-base font-semibold text-slate-900">디자인 + 공개 사이트 (마일스톤 1)</h4>
-                <p class="mb-1 text-xs font-semibold text-amber-600">Day 8–30 · M1 목표 8/14</p>
-                <p class="text-sm leading-7 text-slate-600">Figma UI/UX 디자인과 병행하여 공개 브랜드 사이트 + CMS를 우선 개발·배포</p>
+                <p class="mb-1 text-xs font-semibold text-amber-600">Day 8–30 · M1 목표 8/14 (필수)</p>
+                <p class="text-sm leading-7 text-slate-600">Figma UI/UX와 병행하여 공개 6페이지+약관 3종 + 코드 없는 CMS를 우선 개발·배포</p>
                 <ul class="mt-2 list-disc pl-5 text-sm text-slate-500">
                   <li>산출물: 디자인 원본, 공개 사이트+CMS, SEO/Lighthouse 90+ 검증</li>
                 </ul>
               </div>
               <div class="timeline-item">
                 <p class="text-sm font-semibold tracking-[0.14em] text-sky-700">PHASE 3</p>
-                <h4 class="text-base font-semibold text-slate-900">학생관리·결제·알림</h4>
+                <h4 class="text-base font-semibold text-slate-900">관리자·학생관리·결제·알림</h4>
                 <p class="mb-1 text-xs font-semibold text-amber-600">Day 25–48</p>
-                <p class="text-sm leading-7 text-slate-600">관리자 대시보드, 학생관리 CRM, 결제선생·Solapi 연동, 알림 자동화</p>
+                <p class="text-sm leading-7 text-slate-600">대시보드, 학생관리 CRM(상담·수업기록·일정·성적·자료), 결제선생·미납/매출, Solapi 알림톡→SMS 폴백, 자동화 트리거</p>
                 <ul class="mt-2 list-disc pl-5 text-sm text-slate-500">
                   <li>산출물: 관리자/학생관리 화면, 결제·알림 연동, API 문서</li>
                 </ul>
               </div>
               <div class="timeline-item">
                 <p class="text-sm font-semibold tracking-[0.14em] text-sky-700">PHASE 4</p>
-                <h4 class="text-base font-semibold text-slate-900">AI 리포트 + QA/배포 (마일스톤 2)</h4>
-                <p class="mb-1 text-xs font-semibold text-amber-600">Day 45–60</p>
-                <p class="text-sm leading-7 text-slate-600">AI 수업 리포트 자동화, Notion 연동, 통합 QA, Lighthouse 최종 최적화 및 배포</p>
+                <h4 class="text-base font-semibold text-slate-900">AI 4단 리포트 + Notion + QA/배포 (마일스톤 2)</h4>
+                <p class="mb-1 text-xs font-semibold text-amber-600">Day 45–60 · ~9주차</p>
+                <p class="text-sm leading-7 text-slate-600">멀티모델 어댑터(수업/주간/월간/심화)·폴백·승인 발송, Notion 연동, 후기 고도화, 인수 시나리오 테스트, Lighthouse 최종 최적화·배포·도메인 연결</p>
                 <ul class="mt-2 list-disc pl-5 text-sm text-slate-500">
                   <li>산출물: AI 리포트 파이프라인, 최종 소스코드·문서, 운영 배포</li>
                 </ul>
@@ -561,17 +573,32 @@
 
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
+              <h2>투입 인력 구성</h2>
+              <blockquote>팀 단위 투입으로 기획·디자인·개발을 병행하여 60일 및 마일스톤 1(8/14)을 확보합니다.</blockquote>
+              <table>
+                <thead>
+                  <tr><th>역할</th><th>인원</th><th>주요 담당</th><th>주 투입 단계</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>PM / 기획</td><td>1명</td><td>요구사항·IA·일정 관리, 커뮤니케이션</td><td>P1–P4</td></tr>
+                  <tr><td>UI/UX 디자이너</td><td>1명</td><td>공개사이트·관리자·학생관리 디자인(Figma)</td><td>P1–P2</td></tr>
+                  <tr><td>프론트엔드 개발</td><td>2명</td><td>공개 6P+약관·CMS·대시보드·학생관리 화면</td><td>P2–P4</td></tr>
+                  <tr><td>백엔드/연동 개발</td><td>1명</td><td>Supabase·RLS, 결제·알림·Notion·AI 어댑터</td><td>P1–P4</td></tr>
+                </tbody>
+              </table>
+              <p>※ 단계별 병행 투입으로 공개 사이트(M1)를 조기 확보하고, 이후 관리자·학생관리·AI 리포트를 순차 완성합니다.</p>
+
               <h2>마일스톤 체크포인트</h2>
               <table>
                 <thead>
-                  <tr><th>마일스톤</th><th>시점</th><th>검수 기준</th></tr>
+                  <tr><th>마일스톤</th><th>범위</th><th>기한</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>M1: 공개 사이트 오픈</td><td>~8/14 (Day 30 내)</td><td>공개사이트+CMS 배포, Lighthouse 90+ 확인</td></tr>
-                  <tr><td>M1.5: 학생관리·결제 완료</td><td>Day 48</td><td>CRM·결제·알림 동작, 테넌트 격리 검증</td></tr>
-                  <tr><td>M2: 최종 오픈(납품)</td><td>Day 60 (착수 후 9주 내)</td><td>AI 리포트 자동화 동작, 전체 통합 QA 통과, 소스/문서 이관</td></tr>
+                  <tr><td>M1 (필수)</td><td>공개 사이트 (6P + 약관 3종)</td><td>~8/14</td></tr>
+                  <tr><td>M2</td><td>관리자 + 학생관리 + 기본 알림 + 배포·도메인 연결 + AI 4단 리포트 + 후기 고도화 + Notion 연동 + 최종 테스트</td><td>~9주차 (Day 60)</td></tr>
                 </tbody>
               </table>
+              <p>지급: 마일스톤 분할 · 위시켓 에스크로 경유 / 완료 기준: 인수 테스트(실제 시나리오) 통과 / 납품 후 2주 무상 수정, 이후 월 단위 유지보수 협의.</p>
 
               <h2>커뮤니케이션 계획</h2>
               <table>
@@ -579,7 +606,7 @@
                 <tr><td>일일 진행 공유</td><td>Slack / 카카오톡</td><td>매일</td></tr>
                 <tr><td>주간 미팅</td><td>Zoom / Google Meet</td><td>주 1회</td></tr>
                 <tr><td>마일스톤 리뷰</td><td>화면 공유 + 문서</td><td>단계 완료 시</td></tr>
-                <tr><td>이슈 트래킹</td><td>GitHub Issues</td><td>상시</td></tr>
+                <tr><td>소스 백업 확인</td><td>GitHub (발주처 협업자 초대)</td><td>매주</td></tr>
               </table>
             </article>
           </div>
@@ -590,57 +617,30 @@
           <div class="rounded-2xl border border-slate-200/70 bg-white/95 p-5 shadow-soft backdrop-blur md:p-8">
             <article class="doc-content">
               <h1>유사 프로젝트 경험</h1>
-              <blockquote>본 프로젝트와 유사한 기능/기술 스택(멀티테넌트 SaaS, 관리 시스템, AI 리포트 자동화)을 활용한 수행 경험을 소개합니다.</blockquote>
+              <blockquote>본 프로젝트의 3대 축(멀티테넌트 SaaS·관리 시스템, AI 리포트 자동화·승인 발송, AI 멀티모델 어댑터)과 직접 대응하는 수행 경험을 소개합니다.</blockquote>
             </article>
           </div>
 
           <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
               <p class="text-2xl font-bold text-sky-700">멀티테넌트</p>
-              <p class="mt-1 text-xs text-slate-500">SaaS 아키텍처 구축 경험</p>
+              <p class="mt-1 text-xs text-slate-500">SaaS 격리 아키텍처</p>
             </div>
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
-              <p class="text-2xl font-bold text-sky-700">AI 리포트</p>
-              <p class="mt-1 text-xs text-slate-500">보고서 자동생성 상용화</p>
+              <p class="text-2xl font-bold text-sky-700">멀티모델</p>
+              <p class="mt-1 text-xs text-slate-500">AI 어댑터·폴백 경험</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
+              <p class="text-2xl font-bold text-sky-700">승인 발송</p>
+              <p class="mt-1 text-xs text-slate-500">리포트 검수 워크플로우</p>
             </div>
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
               <p class="text-2xl font-bold text-sky-700">Next.js</p>
               <p class="mt-1 text-xs text-slate-500">풀스택 상용 서비스 다수</p>
             </div>
-            <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-4 text-center shadow-soft backdrop-blur">
-              <p class="text-2xl font-bold text-sky-700">관리 시스템</p>
-              <p class="mt-1 text-xs text-slate-500">대시보드·CRM·워크플로우</p>
-            </div>
           </div>
 
           <div class="space-y-4">
-            <!-- EZ-Approve -->
-            <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft backdrop-blur md:p-8">
-              <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-sky-100 text-sky-700 border-sky-200">B2B SaaS · 전자결재</div>
-              <h3 class="text-lg font-semibold tracking-tight text-slate-900">EZ-Approve — 전자결재 SaaS</h3>
-              <p class="mt-1 text-xs text-slate-400">기업용 SaaS / 관리자 포탈 · 약 9주</p>
-              <div class="mt-3 doc-content">
-                <h4>프로젝트 개요</h4>
-                <p>다단계 전자결재·승인 워크플로우와 관리자 대시보드를 갖춘 기업용 SaaS. Next.js·TypeScript 풀스택으로 구축했습니다.</p>
-                <h4>핵심 기능</h4>
-                <ul>
-                  <li>관리자 대시보드, 역할 기반 접근제어(RBAC, 7개 역할)</li>
-                  <li>토큰 기반 외부 셀프서비스 포탈, 리치 에디터</li>
-                  <li>50+ 페이지, 120-150 API 엔드포인트 규모의 어드민 시스템</li>
-                </ul>
-                <h4>본 프로젝트와의 유사점</h4>
-                <p>공개사이트+CMS+관리자 대시보드+학생관리로 이어지는 다중 역할·권한 기반 관리 시스템 구조와 직결. Next.js/TypeScript 풀스택 어드민 개발 경험이 그대로 적용됩니다.</p>
-                <h4>기술 스택</h4>
-                <div class="flex flex-wrap gap-1.5 not-prose">
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">Next.js</span>
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">TypeScript</span>
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">NestJS</span>
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">RBAC</span>
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">Docker</span>
-                </div>
-              </div>
-            </div>
-
             <!-- Harmony Link -->
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft backdrop-blur md:p-8">
               <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-sky-100 text-sky-700 border-sky-200">멀티테넌트 SaaS · AI 분석</div>
@@ -656,7 +656,7 @@
                   <li>AI 건강 분석 리포트, 전자서명, 133K+ LOC / 140+ API</li>
                 </ul>
                 <h4>본 프로젝트와의 유사점</h4>
-                <p>멀티테넌트(선생님별 테넌트)·대상자 관리(학생 관리)·보호자 커뮤니케이션(학부모 알림)·AI 분석 리포트가 본 과업과 거의 1:1로 대응합니다. Solapi류 알림 자동화 경험도 직접 연결됩니다.</p>
+                <p>멀티테넌트(선생님별 테넌트)·대상자 관리(학생 관리)·보호자 커뮤니케이션(학부모 알림)·AI 분석 리포트가 본 과업과 거의 1:1로 대응합니다. 알림톡/SMS류 알림 자동화 경험도 직접 연결됩니다.</p>
                 <h4>기술 스택</h4>
                 <div class="flex flex-wrap gap-1.5 not-prose">
                   <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">Next.js</span>
@@ -668,29 +668,82 @@
               </div>
             </div>
 
+            <!-- AI-Agent -->
+            <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft backdrop-blur md:p-8">
+              <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-sky-100 text-sky-700 border-sky-200">AI 멀티모델 어댑터 · 자동화</div>
+              <h3 class="text-lg font-semibold tracking-tight text-slate-900">AI Agent — AI-Native 개발 프레임워크</h3>
+              <p class="mt-1 text-xs text-slate-400">AI/자동화 / 멀티모델 오케스트레이션</p>
+              <div class="mt-3 doc-content">
+                <h4>프로젝트 개요</h4>
+                <p>Claude·Gemini 등 복수 AI 모델을 어댑터로 추상화하여 오케스트레이션하는 프레임워크. 작업 유형별 모델 선택·교체·폴백과 품질 게이트를 갖췄습니다.</p>
+                <h4>핵심 기능</h4>
+                <ul>
+                  <li>멀티 모델 어댑터/오케스트레이션(Claude, Gemini, Codex 등)</li>
+                  <li>유형별 모델 지정·교체, 실패 시 폴백 처리</li>
+                  <li>12 품질 게이트, 134+ 스킬 모듈, TypeScript/MCP</li>
+                </ul>
+                <h4>본 프로젝트와의 유사점</h4>
+                <p>요구된 "특정 AI사 비종속 어댑터 패턴 + 등급별 모델 교체(REPORT_AI_LESSON/WEEKLY/MONTHLY/DEEP) + 폴백"과 정확히 동일한 설계를 구현·운영한 경험으로, AI 4단 리포트 요건에 바로 적용됩니다.</p>
+                <h4>기술 스택</h4>
+                <div class="flex flex-wrap gap-1.5 not-prose">
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">TypeScript</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">멀티모델 어댑터</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">폴백/오케스트레이션</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">Claude / Gemini</span>
+                </div>
+              </div>
+            </div>
+
             <!-- Series-B -->
             <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft backdrop-blur md:p-8">
-              <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-sky-100 text-sky-700 border-sky-200">AI 보고서 자동화 · 포탈</div>
+              <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-sky-100 text-sky-700 border-sky-200">AI 리포트 자동화 · 승인 발송</div>
               <h3 class="text-lg font-semibold tracking-tight text-slate-900">Series-B — 펀드 관리 플랫폼</h3>
               <p class="mt-1 text-xs text-slate-400">B2B 포탈 / AI 리포트 자동화 · 약 14개월</p>
               <div class="mt-3 doc-content">
                 <h4>프로젝트 개요</h4>
-                <p>다중 이해관계자(포탈) 대시보드와 AI 기반 보고서 자동 생성을 갖춘 대규모 관리 플랫폼. 데이터 격리·보안을 강도 높게 설계했습니다.</p>
+                <p>다중 이해관계자 대시보드와 AI 기반 보고서 자동 생성을 갖춘 대규모 관리 플랫폼. 데이터 격리·보안을 강도 높게 설계했습니다.</p>
                 <h4>핵심 기능</h4>
                 <ul>
-                  <li>AI 투자 보고서 자동 생성(입력→생성→검수→발행)</li>
+                  <li>AI 보고서 자동 생성(입력→생성→검수→발행)</li>
                   <li>다중 역할 대시보드/포탈, 실시간 공동편집</li>
                   <li>5계층 보안·데이터 격리, 200-300+ API 엔드포인트</li>
                 </ul>
                 <h4>본 프로젝트와의 유사점</h4>
-                <p>AI 수업 리포트 자동화의 핵심인 "AI 보고서 자동 생성 파이프라인" 구축·운영 경험이 직접 대응합니다. 대시보드/포탈 및 강한 데이터 격리 설계는 멀티테넌트 RLS 요건과도 연결됩니다.</p>
+                <p>"AI 리포트 자동 생성 + 검수·승인 후 발송" 워크플로우 상용 경험이 요구된 "발송 전 관리자 승인" 구조와 직접 대응합니다. 강한 데이터 격리 설계는 tenant_id+RLS 멀티테넌트 요건과 연결됩니다.</p>
                 <h4>기술 스택</h4>
                 <div class="flex flex-wrap gap-1.5 not-prose">
                   <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">Next.js</span>
                   <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">TypeScript</span>
                   <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">AI 보고서</span>
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">대시보드</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">승인 워크플로우</span>
                   <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">데이터 격리</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- EZ-Approve -->
+            <div class="rounded-2xl border border-slate-200/70 bg-white/90 p-5 shadow-soft backdrop-blur md:p-8">
+              <div class="mb-3 inline-flex rounded-full border px-2.5 py-1 text-sm font-semibold tracking-[0.12em] bg-sky-100 text-sky-700 border-sky-200">B2B SaaS · 관리자/CMS</div>
+              <h3 class="text-lg font-semibold tracking-tight text-slate-900">EZ-Approve — 전자결재 SaaS</h3>
+              <p class="mt-1 text-xs text-slate-400">기업용 SaaS / 관리자 포탈 · 약 9주</p>
+              <div class="mt-3 doc-content">
+                <h4>프로젝트 개요</h4>
+                <p>다단계 승인 워크플로우와 관리자 대시보드, 콘텐츠 편집기를 갖춘 기업용 SaaS. Next.js·TypeScript 풀스택으로 구축했습니다.</p>
+                <h4>핵심 기능</h4>
+                <ul>
+                  <li>관리자 대시보드, 역할 기반 접근제어(RBAC, 7개 역할)</li>
+                  <li>리치 콘텐츠 에디터, 토큰 기반 셀프서비스 포탈</li>
+                  <li>50+ 페이지, 120-150 API 규모의 어드민 시스템</li>
+                </ul>
+                <h4>본 프로젝트와의 유사점</h4>
+                <p>관리자 대시보드·콘텐츠 편집(CMS)·역할 권한·다단계 승인 워크플로우가 "코드 없는 CMS + 발송 전 관리자 승인 + 다중 역할" 요건과 직결됩니다.</p>
+                <h4>기술 스택</h4>
+                <div class="flex flex-wrap gap-1.5 not-prose">
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">Next.js</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">TypeScript</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">RBAC</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">CMS/에디터</span>
+                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-sm text-slate-500">승인 워크플로우</span>
                 </div>
               </div>
             </div>
@@ -735,7 +788,7 @@
     const pages = ['home', 'overview', 'estimate', 'manday', 'prd', 'timeline', 'portfolio'];
     const pageLabels = {
       home: '홈', overview: '프로젝트 소개', estimate: '견적서',
-      manday: '공수계산서', prd: 'PRD', timeline: '일정 제안', portfolio: '유사 프로젝트 경험'
+      manday: '공수계산서', prd: 'PRD', timeline: '일정 & 투입 인력', portfolio: '유사 프로젝트 경험'
     };
 
     function navigate(pageId) {
